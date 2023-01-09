@@ -1,4 +1,4 @@
-# Models of Sequential Data
+# Models of Sequential Data (MSD)
 
 My score: \
 HW: 40/50 \
