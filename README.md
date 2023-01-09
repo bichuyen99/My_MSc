@@ -1,4 +1,4 @@
-# Math-of-Machine-Learning-Skoltech-HSE-
+# Planning Algorithms in Artificial Intelligence (PlanAI)
 
 My score: \
 HW1: 99/100 \
