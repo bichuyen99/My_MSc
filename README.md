@@ -1,4 +1,4 @@
-# Math-of-Machine-Learning-Skoltech-HSE-
+# Introduction to Computer Vision (Intro2CV)
 
 My score: \
 HW1: 67/100 \
