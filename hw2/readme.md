@@ -11,4 +11,6 @@ P.5. ok
 * Problem 3[4/18] pts \
 It is not a solution based on first order optimality condition, you just literally try to solve the initial optimization problem directly with gradient method. You also didn't provide any sparse variation 
 * Problem 4[3/23] pts \
-1. No BTTB matrix construction"
+1. No BTTB matrix construction" 
+
+HW2: 50/93
