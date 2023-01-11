@@ -12,7 +12,7 @@
 1. Taylor series is mentioned, but the tail is not bounded. The rank of Taylor series is computed. 
 2. No legit solution is presented. It is not clear what is the difference between the cases D=N and D=1. 
 3. Presented no solution 
-Problem 3[15/16] pts. What about algorithm's behaviour to reflections? 
+* Problem 3[15/16] pts. What about algorithm's behaviour to reflections? 
 * Problem 4[11/12] pts 
 1. OK 
 2. OK 
