@@ -19,4 +19,3 @@ Problem 3[15/16] pts. What about algorithm's behaviour to reflections?
 3. OK 
 4. No comment
 
-HW1: 45/65
