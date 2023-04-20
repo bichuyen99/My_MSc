@@ -12,4 +12,4 @@
 | Course Name| Link to materials |
 | :----------- | :-----------: | 
 |Machine Learning| [ML](https://github.com/bichuyen99/My_MSc/tree/ML)|
-|Markov Chain| [MC](https://github.com/bichuyen99/My_MSc/tree/PlanAI)|
+|Markov Chain| [MC](https://github.com/bichuyen99/My_MSc/tree/MC)|
