@@ -31,6 +31,3 @@ On completion of the course students are expected to:
 
 ## Seminars:
 The seminars of the course can be accessed via the [link](https://github.com/adasegroup/ML2023_seminars).
-
-## Contact regarding this github repo:
-If you have any questions/suggestions regarding this github repository or have found any bugs, please write to me at Milena.Gazdieva@skoltech.ru 
