@@ -8,7 +8,7 @@
 |Models of Sequential Data| [MSD](https://github.com/bichuyen99/My_MSc/tree/MSD)|
 |Numerical Linear Algebra| [NLA](https://github.com/bichuyen99/My_MSc/tree/NLA)|
 
-### Term 3 (09/01/2023 - 26/03/2023)
+### Term 3 (09/01/2023 - 01/04/2023)
 | Course Name| Link to materials |
 | :----------- | :-----------: | 
 |Machine Learning| [ML](https://github.com/bichuyen99/My_MSc/tree/ML)|
