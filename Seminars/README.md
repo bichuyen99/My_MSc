@@ -32,6 +32,3 @@ On completion of the course students are expected to:
 
 ## How to use Google Colab:
 The instructions on how to open seminars' notebooks in Google Colaboratory: [link](https://github.com/adasegroup/ML2023_seminars/blob/master/how_to_colab.md)
-
-## Contact regarding this github repo:
-If you have any questions/suggestions regarding this github repository or have found any bugs, please write to me at Milena.Gazdieva@skoltech.ru 
