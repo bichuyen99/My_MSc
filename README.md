@@ -7,3 +7,9 @@
 |Planning Algorithms in Artificial Intelligence| [PlanAI](https://github.com/bichuyen99/My_MSc/tree/PlanAI)|
 |Models of Sequential Data| [MSD](https://github.com/bichuyen99/My_MSc/tree/MSD)|
 |Numerical Linear Algebra| [NLA](https://github.com/bichuyen99/My_MSc/tree/NLA)|
+
+### Term 3 (01/02/2023 - 26/03/2023)
+| Course Name| Link to materials |
+| :----------- | :-----------: | 
+|Machine Learning| [ML](https://github.com/bichuyen99/My_MSc/tree/ML)|
+|Markov Chain| [MC](https://github.com/bichuyen99/My_MSc/tree/PlanAI)|
