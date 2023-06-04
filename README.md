@@ -12,4 +12,11 @@
 | Course Name| Link to materials |
 | :----------- | :-----------: | 
 |Machine Learning| [ML](https://github.com/bichuyen99/My_MSc/tree/ML)|
-|Markov Chain| [MC](https://github.com/bichuyen99/My_MSc/tree/MC)|
+|Markov Chain| [MC](https://github.com/bichuyen99/My_MSc/tree/MC)|'
+
+### Term 4 (27/03/2023 - 14/06/2023)
+| Course Name| Link to materials |
+| :----------- | :-----------: | 
+|Deep Learning| [DL](https://github.com/bichuyen99/My_MSc/tree/DL)|
+|Deep Learning for Natural Language Processing| [DL4NLP](https://github.com/bichuyen99/My_MSc/tree/DL4NLP)|
+|High-dimensional Probability and Statistics| [HDP&S](https://github.com/bichuyen99/My_MSc/tree/main)|
