@@ -1,0 +1,39 @@
+{"TF-IDF": 
+{"SVM": 
+{"quarantine": 
+{"stance": {"C": 10, "kernel": "rbf"}, 
+"argument": {"C": 10, "kernel": "linear"}}, 
+"vaccines": 
+{"stance": {"C": 10, "kernel": "linear"}, 
+"argument": {"C": 1, "kernel": "rbf"}}, 
+"masks": 
+{"stance": {"C": 10, "kernel": "rbf"}, 
+"argument": {"C": 1, "kernel": "rbf"}}}, 
+"LR": 
+{"quarantine": 
+{"stance": {"C": 5, "solver": "newton-cg"}, 
+"argument": {"C": 5, "solver": "newton-cg"}}, 
+"vaccines": 
+{"stance": {"C": 5, "solver": "newton-cg"}, 
+"argument": {"C": 5, "solver": "newton-cg"}}, 
+"masks": 
+{"stance": {"C": 9, "solver": "newton-cg"}, 
+"argument": {"C": 9, "solver": "newton-cg"}}}}, 
+"BERT": 
+{"SVM": 
+{"quarantine": 
+{"stance": {"C": 50, "kernel": "rbf"}, 
+"argument": {"C": 50, "kernel": "rbf"}}, 
+"vaccines": 
+{"stance": {"C": 50, "kernel": "rbf"}, 
+"argument": {"C": 50, "kernel": "rbf"}}, 
+"masks": 
+{"stance": {"C": 50, "kernel": "rbf"}, 
+"argument": {"C": 50, "kernel": "rbf"}}}, 
+"LR": 
+{"quarantine": {"stance": {"C": 9, "solver": "newton-cg"}, 
+"argument": {"C": 9, "solver": "saga"}}, 
+"vaccines": {"stance": {"C": 9, "solver": "saga"}, 
+"argument": {"C": 9, "solver": "newton-cg"}}, 
+"masks": {"stance": {"C": 9, "solver": "saga"}, 
+"argument": {"C": 9, "solver": "newton-cg"}}}}}
