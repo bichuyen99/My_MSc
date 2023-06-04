@@ -1,1 +1,1 @@
-# Introduction to Computer Vision (Intro2CV)
+# Deep learning for Natural Language Processing (DL4NLP)
