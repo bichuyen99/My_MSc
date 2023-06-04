@@ -1,0 +1,7 @@
+model,"total parameters, ths.","trainable parameters, ths."
+resnet_18,11178,11178
+resnet_152,58152,58152
+densenet_121,6957,6957
+densenet_161,26480,26480
+effnet,5288,5288
+transformer,1368,1368
