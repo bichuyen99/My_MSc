@@ -20,3 +20,11 @@
 |Deep Learning| [DL](https://github.com/bichuyen99/My_MSc/tree/DL)|
 |Deep Learning for Natural Language Processing| [DL4NLP](https://github.com/bichuyen99/My_MSc/tree/DL4NLP)|
 |High-dimensional Probability and Statistics| [HDP&S](https://github.com/bichuyen99/My_MSc/tree/HDPS)|
+
+### Term 5 (01/9/2023 - 29/10/2023)
+| Course Name| Link to materials |
+| :----------- | :-----------: | 
+|Innovation Workshop| [IW](https://github.com/bichuyen99/My_MSc/tree/Intro2CV)|
+|Introduction to Data Science| [Intro2DS](https://github.com/bichuyen99/My_MSc/tree/PlanAI)|
+|Foundation of Software Engineering| [FSE](https://github.com/bichuyen99/My_MSc/tree/MSD)|
+|Mathematical Foundation of Probability Theory| [MFPT](https://github.com/bichuyen99/My_MSc/tree/NLA)|
