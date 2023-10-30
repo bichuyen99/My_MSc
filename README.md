@@ -1,1 +1,1 @@
-# Introduction to Computer Vision (Intro2CV)
+# Introduction to Data Science (Intro2DS)
