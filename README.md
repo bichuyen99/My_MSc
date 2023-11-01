@@ -26,5 +26,5 @@
 | :----------- | :-----------: | 
 |Innovation Workshop| [IW](https://github.com/bichuyen99/My_MSc/tree/Intro2CV)|
 |Introduction to Data Science| [Intro2DS](https://github.com/bichuyen99/My_MSc/tree/Intro2DS)|
-|Foundation of Software Engineering| [FSE](https://github.com/bichuyen99/My_MSc/tree/MSD)|
-|Mathematical Foundation of Probability Theory| [MFPT](https://github.com/bichuyen99/My_MSc/tree/NLA)|
+|Foundation of Software Engineering| [FSE](https://github.com/bichuyen99/My_MSc/tree/FSE)|
+|Mathematical Foundation of Probability Theory| [MFPT](https://github.com/bichuyen99/My_MSc/tree/MFPT)|
