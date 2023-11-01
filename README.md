@@ -1,1 +1,1 @@
-# Foundation of Software Engineering (FSE)
+# Mathematical Foundations of Probability theory (MFPT)
