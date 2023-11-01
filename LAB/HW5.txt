@@ -1,0 +1,88 @@
+1.
+mkdir data
+docker run --name lab5 -it -v ~/data:/data ubuntu:23.04
+root@58bbe76b5924:/# apt update
+root@58bbe76b5924:/# apt install vim
+root@58bbe76b5924:/# mkdir app
+root@76fcc9c2a836:/# vim app/timestamper.sh
+root@76fcc9c2a836:/# cat app/timestamper.sh
+----------------------------
+#!/bin/bash
+
+for i in 'seq 1 6000'; do
+	date >> log.txt
+	sleep 1
+done
+----------------------------
+root@76fcc9c2a836:/# chmod +x app/timestamper.sh
+root@76fcc9c2a836:/# ./app/timestamper.sh &
+Ctrl + P, Ctrl + Q
+tail data/log.txt
+----------------------------
+Tue Oct 17 13:32:55 UTC 2023
+Tue Oct 17 13:32:55 UTC 2023
+Tue Oct 17 13:32:56 UTC 2023
+Tue Oct 17 13:32:56 UTC 2023
+Tue Oct 17 13:32:57 UTC 2023
+Tue Oct 17 13:32:57 UTC 2023
+Tue Oct 17 13:32:58 UTC 2023
+Tue Oct 17 13:32:58 UTC 2023
+Tue Oct 17 13:32:59 UTC 2023
+Tue Oct 17 13:32:59 UTC 2023
+----------------------------
+docker container attach lab5
+root@76fcc9c2a836:/# tail data/log.txt
+----------------------------
+Tue Oct 17 13:34:24 UTC 2023
+Tue Oct 17 13:34:25 UTC 2023
+Tue Oct 17 13:34:25 UTC 2023
+Tue Oct 17 13:34:26 UTC 2023
+Tue Oct 17 13:34:26 UTC 2023
+Tue Oct 17 13:34:27 UTC 2023
+Tue Oct 17 13:34:27 UTC 2023
+Tue Oct 17 13:34:28 UTC 2023
+Tue Oct 17 13:34:28 UTC 2023
+Tue Oct 17 13:34:29 UTC 2023
+----------------------------
+
+2. 
+docker pull user1/jupyterlab:latest
+docker run -p 8888:8888 user1/jupyterlab --no-browser
+
+3.
+root@76fcc9c2a836:/# vim app/timestamper.sh
+root@76fcc9c2a836:/# cat app/timestamper.sh
+----------------------------
+#!/bin/bash
+
+for i in 'seq 1 $SEC'; do
+	date >> log.txt
+	sleep 1
+done
+----------------------------
+docker exec --env SEC=3600 -d --workdir /app lab5 bash timestamper.sh
+
+4.
+root@b35af9b3ebf9:/# vim app/timestamper.sh
+root@b35af9b3ebf9:/# cat app/timestamper.sh
+----------------------------
+#!/bin/bash
+
+if ! [[$SEC =~ ^[0-9]+$]]; then 
+	for i in 'seq 1 $({SEC:=1})'; do
+		date >> log.txt
+		sleep 1
+	done
+else
+	for i in 'seq 1 $SEC' do
+		date >> log.txt
+		sleep 1
+	done
+fi
+----------------------------
+docker exec --env SEC -d --workdir /app lab5 bash timestamper.sh
+
+
+
+
+

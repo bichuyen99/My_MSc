@@ -1,0 +1,91 @@
+Part 1:
+1.
+sudo useradd -m lab4_
+sudo passwd lab4_
+sudo apt-get install openssh-server
+service ssh start
+ssh lab4_@localhost
+a.
+ssh-keygen -t ed25519 -f new_key_ed25519 -b 1024
+b.
+ssh-keygen -p -f new_key_ed25519
+
+2.
+a.
+ssh-copy-id -n new_key_ed25519.pub lab4_@localhost
+
+b.
+ssh-copy-id -i new_key_ed25519.pub lab4_@localhost
+
+Part 2:
+3.
+a.
+#In the remote machine
+nohup bash -c 'sleep 100; echo complete' &  > std.out > std.err
+Ctrl+D
+
+#In the local machine
+ssh lab4_@localhost ps aux | grep sleep
+-------------------------------------------
+lab4_    5660  0.0  0.1   9972  3456 ?        S    14:45   0:00 bash -c sleep 100; echo complete
+lab4_    5661  0.0  0.0   8372  1920 ?        S    14:45   0:00 sleep 100
+root     5671  0.0  0.1   9212  2560 pts/0    S+   14:46   0:00 grep --color=auto sleep
+
+b.
+# In the local machine
+ssh -f lab4_@localhost  "nohup bash -c 'sleep 100; echo complete'& > std.out > std.err"
+ssh lab4_@localhost ps aux | grep sleep
+-------------------------------------------
+root     5740  0.0  0.2  16920  5632 ?        Ss   14:59   0:00 ssh -f lab4_@localhost nohup bash -c 'sleep 100; echo complete'& > std.out > std.err 
+lab4_    5840  0.0  0.1   9972  3328 ?        S    14:59   0:00 bash -c sleep 100; echo complete
+lab4_    5843  0.0  0.0   8372  1920 ?        S    14:59   0:00 sleep 100
+root     5924  0.0  0.1   9212  2432 pts/0    S+   14:59   0:00 grep --color=auto sleep
+
+4.
+a.
+ls -lh 2>&1 | echo "This is an error message" >&2
+b.
+ls -lh 2> error.log | tee output.log
+c.
+ls -lh 2>&1 | tee output.log | tee error.log >&2
+d.
+tee output.log <(ls -lh 2>&1) | tee error.log >&2
+
+Part 3
+#In the remote machine
+mkdir directory_remote
+mkdir directory_remote_1
+
+5.
+# In the local machine
+rsync -avP --min-size=10M --max-size=20M practical4_logs/ lab4_@localhost:directory_remote_1/
+
+6. 
+rsync -avP --exclude="a*" --exclude="*z" practical4_data_for_science/ lab4_@localhost:directory_remote/
+rsync -avP --exclude="a*" --exclude="*z" practical4_logs/ lab4_@localhost:directory_remote/
+
+7. 
+rsync -av -f="-! */" practical4_data_for_science/ lab4_@localhost:directory_remote_1/
+
+
+Part 4:
+8. 
+ssh -f lab4_@localhost 
+grep -o "[0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9 ]\+\s\bGET" directory_remote/logs/logs_2015-01-13-{10..17}.tsv |sort |uniq -c |sort |head -n 3
+----------------------------
+1002 logs_2015-01-13-17.tsv:141.217.111.60   GET
+1006 logs_2015-01-13-17.tsv:247.205.42.142   GET
+1011 logs_2015-01-13-17.tsv:168.68.197.26    GET
+
+9. 
+mkdir ../archive && find . -name "*.tsv" -size +5M -exec cp "{}" ../archive \; && ls ../archive | wc -l
+----------------------------
+37  
+	
+10. 
+find directory_remote/data_for_science/*.txt | sort -k5 -n -r | head -n3 | xargs grep bad | awk '{print $2}' | tr "," "\n" | uniq -ic | head -n 12 | tail -n 3
+----------------------------
+1   extensively
+1   proposition
+1   Jainism
+
