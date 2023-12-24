@@ -1,1 +1,1 @@
-# Innovation Workshop (IW)
+# Entrepreneurial Strategy (ES)
