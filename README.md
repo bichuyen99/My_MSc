@@ -28,3 +28,10 @@
 |Introduction to Data Science| [Intro2DS](https://github.com/bichuyen99/My_MSc/tree/Intro2DS)|
 |Foundation of Software Engineering| [FSE](https://github.com/bichuyen99/My_MSc/tree/FSE)|
 |Mathematical Foundation of Probability Theory| [MFPT](https://github.com/bichuyen99/My_MSc/tree/MFPT)|
+
+### Term 6 (30/10/2023 - 20/12/2023)
+| Course Name| Link to materials |
+| :----------- | :-----------: | 
+|High Performance Python Lab| [HPPL](https://github.com/bichuyen99/My_MSc/tree/HPPL)|
+|Entrepreneurial Strategy| [ES](https://github.com/bichuyen99/My_MSc/tree/ES)|
+|Modern Algorithmical Optimization| [MAO](https://github.com/bichuyen99/My_MSc/tree/MAO)|
