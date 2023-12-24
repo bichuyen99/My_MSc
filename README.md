@@ -1,1 +1,1 @@
-# Introduction to Data Science (Intro2DS)
+# High Performance Python Lab (HPPL)
