@@ -1,1 +1,1 @@
-# High-dimensional Probability and Statistics (HDP&S)
+# Modern Algorithmical Optimization (MAO)
