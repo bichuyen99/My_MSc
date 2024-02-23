@@ -1,4 +1,4 @@
-# Math of Machine Learning (HSE) + Data Science (Skoltech) course 
+# Math of Machine Learning + Data Science course 
 
 ### Term 2 (31/10/2022 - 23/12/2022)
 | Course Name| Link to materials |
